@@ -1,0 +1,302 @@
+[
+  {
+    "id": "1",
+    "artist": "Arkells",
+    "song": "Years in the Making",
+    "year": "2020"
+  },
+  {
+    "id": "2",
+    "artist": "Miley Cyrus &amp; Stevie Nicks",
+    "song": "Midnight Sky (Edge of Midnight)",
+    "year": "2020"
+  },
+  {
+    "id": "3",
+    "artist": "Pomplamoose",
+    "song": "Sweet Dreams/Seven Nation",
+    "year": "2019"
+  },
+  {
+    "id": "4",
+    "artist": "Jonas Brothers",
+    "song": "Sucker",
+    "year": "2019"
+  },
+  {
+    "id": "5",
+    "artist": "Bille Eilish",
+    "song": "Bad Guy",
+    "year": "2019"
+  },
+  {
+    "id": "6",
+    "artist": "The Struts",
+    "song": "Body Talks",
+    "year": "2018"
+  },
+  {
+    "id": "7",
+    "artist": "Dua Lipa",
+    "song": "New Rules",
+    "year": "2017"
+  },
+  {
+    "id": "8",
+    "artist": "Alice Merton",
+    "song": "No Roots",
+    "year": "2016"
+  },
+  {
+    "id": "9",
+    "artist": "Walk The Moon",
+    "song": "Shut Up and Dance",
+    "year": "2014"
+  },
+  {
+    "id": "10",
+    "artist": "The Pretty Reckless",
+    "song": "Heaven Knows",
+    "year": "2013"
+  },
+  {
+    "id": "11",
+    "artist": "Paramore",
+    "song": "Still Into You",
+    "year": "2013"
+  },
+  {
+    "id": "12",
+    "artist": "Serena Ryder",
+    "song": "Stompa",
+    "year": "2012"
+  },
+  {
+    "id": "13",
+    "artist": "Miranda Lambert",
+    "song": "Mama's Broken Heart",
+    "year": "2011"
+  },
+  {
+    "id": "14",
+    "artist": "Adele",
+    "song": "Rolling in the Deep",
+    "year": "2010"
+  },
+  {
+    "id": "15",
+    "artist": "Metric",
+    "song": "Gimme Sympathy",
+    "year": "2009"
+  },
+  {
+    "id": "16",
+    "artist": "Amy Winehouse",
+    "song": "Valerie",
+    "year": "2007"
+  },
+  {
+    "id": "17",
+    "artist": "P!nk",
+    "song": "Who Knew",
+    "year": "2006"
+  },
+  {
+    "id": "18",
+    "artist": "John Mayer",
+    "song": "Slow Dancing in a Burning Room",
+    "year": "2006"
+  },
+  {
+    "id": "19",
+    "artist": "Jace Everett",
+    "song": "Bad Things",
+    "year": "2005"
+  },
+  {
+    "id": "20",
+    "artist": "KT Tunstall",
+    "song": "Black Horse and Cherry Tree",
+    "year": "2004"
+  },
+  {
+    "id": "21",
+    "artist": "Britney Spears",
+    "song": "Toxic",
+    "year": "2003"
+  },
+  {
+    "id": "22",
+    "artist": "Muse",
+    "song": "Hysteria",
+    "year": "2003"
+  },
+  {
+    "id": "23",
+    "artist": "No Doubt",
+    "song": "Just A Girl",
+    "year": "2003"
+  },
+  {
+    "id": "24",
+    "artist": "The Darkness",
+    "song": "I Believe In A Thing Called Love",
+    "year": "2003"
+  },
+  {
+    "id": "25",
+    "artist": "Maroon 5",
+    "song": "Harder to Breathe",
+    "year": "2002"
+  },
+  {
+    "id": "26",
+    "artist": "The Chicks",
+    "song": "Goodbye Earl",
+    "year": "1999"
+  },
+  {
+    "id": "27",
+    "artist": "Big Wreck",
+    "song": "That Song",
+    "year": "1997"
+  },
+  {
+    "id": "28",
+    "artist": "Foo Fighters",
+    "song": "My Hero",
+    "year": "1997"
+  },
+  {
+    "id": "29",
+    "artist": "Holly McNarland",
+    "song": "Numb",
+    "year": "1997"
+  },
+  {
+    "id": "30",
+    "artist": "Cake",
+    "song": "I Will Survive",
+    "year": "1996"
+  },
+  {
+    "id": "31",
+    "artist": "The Cardigans",
+    "song": "Lovefool",
+    "year": "1996"
+  },
+  {
+    "id": "32",
+    "artist": "Melissa Etheridge",
+    "song": "Come To My Window",
+    "year": "1993"
+  },
+  {
+    "id": "33",
+    "artist": "Gin Blossoms",
+    "song": "Hey Jealousy",
+    "year": "1992"
+  },
+  {
+    "id": "34",
+    "artist": "Roy Orbison",
+    "song": "I Drove All Night",
+    "year": "1992"
+  },
+  {
+    "id": "35",
+    "artist": "Spin Doctors",
+    "song": "Two Princes",
+    "year": "1991"
+  },
+  {
+    "id": "36",
+    "artist": "Divinyls",
+    "song": "I Touch Myself",
+    "year": "1990"
+  },
+  {
+    "id": "37",
+    "artist": "Tragically Hip",
+    "song": "Blow at High Dough",
+    "year": "1989"
+  },
+  {
+    "id": "38",
+    "artist": "Alannah Myles",
+    "song": "Black Velvet",
+    "year": "1989"
+  },
+  {
+    "id": "39",
+    "artist": "The Outfield",
+    "song": "Your Love",
+    "year": "1985"
+  },
+  {
+    "id": "40",
+    "artist": "Tina Turner &amp; Bryan Adams",
+    "song": "It's Only Love",
+    "year": "1984"
+  },
+  {
+    "id": "41",
+    "artist": "Queen",
+    "song": "I Want to Break Free",
+    "year": "1984"
+  },
+  {
+    "id": "42",
+    "artist": "Don Henley",
+    "song": "Boys of Summer",
+    "year": "1984"
+  },
+  {
+    "id": "43",
+    "artist": "Journey",
+    "song": "Don't Stop Believing",
+    "year": "1981"
+  },
+  {
+    "id": "44",
+    "artist": "Stevie Nicks &amp; Tom Petty",
+    "song": "Stop Draggin My Heart Around",
+    "year": "1981"
+  },
+  {
+    "id": "45",
+    "artist": "Pat Benatar",
+    "song": "Hit Me With Your Best Shot",
+    "year": "1980"
+  },
+  {
+    "id": "46",
+    "artist": "RUSH",
+    "song": "Closer to the Heart",
+    "year": "1977"
+  },
+  {
+    "id": "47",
+    "artist": "Elvin Bishop",
+    "song": "Fooled Around and Fell In Love",
+    "year": "1975"
+  },
+  {
+    "id": "48",
+    "artist": "Linda Ronstadt",
+    "song": "You're No Good",
+    "year": "1974"
+  },
+  {
+    "id": "49",
+    "artist": "Sweet",
+    "song": "Ballroom Blitz",
+    "year": "1974"
+  },
+  {
+    "id": "50",
+    "artist": "Dolly Parton",
+    "song": "Jolene",
+    "year": "1973"
+  }
+]

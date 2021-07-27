@@ -1,0 +1,193 @@
+// Typography Inspired by gridlover.net/Typography
+
+// Size 16 line height 1.618 scale factor 1.618
+// Size 14 line height 1.618 scale factor 1.333
+
+html {
+	font-size: 14px;
+	line-height: 23px;
+	font-family: 'Inter', $font-family;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	@include xl-min {
+		font-size: 16px;
+		line-height: 26px;
+	}
+}
+
+@supports ( font-variation-settings: normal ) {
+	html {
+		font-family: 'Inter var', $font-family;
+		font-feature-settings: "ss01";
+	}
+}
+
+body {
+	font-size: 1rem;
+	line-height: 1.6428571rem;
+
+	@include xl-min {
+		line-height: 1.9375rem;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+	font-weight: 700;
+}
+
+h1, .h1 {
+	margin-top: 1.6428571rem;
+	margin-bottom: 3.2857142rem;
+	font-size: 2.3571429rem;
+	line-height: 3.2857143rem;
+	letter-spacing: -0.050em;
+
+	@include xl-min {
+		margin-top: 1.625rem;
+		margin-bottom: 3.25rem;
+		font-size: 4.25rem;
+		line-height: 4.875rem;
+	}
+}
+
+h2, .h2 {
+	margin-top: 1.6428571rem;
+	margin-bottom: 1.6428571rem;
+	font-size: 1.7857143rem;
+	line-height: 2.4642857rem;
+	letter-spacing: -0.025em;
+
+	@include xl-min {
+		margin-top: 1.625rem;
+		margin-bottom: 1.625rem;
+		font-size: 2.625rem;
+		line-height: 3.25rem;
+	}
+}
+
+h3, .h3 {
+	margin-top: 1.6428571rem;
+	margin-bottom: 1.6428571rem;
+	font-size: 1.3571429rem;
+	line-height: 1.6428571rem;
+	letter-spacing: 0;
+
+	@include xl-min {
+		margin-top: 1.625rem;
+		margin-bottom: 1.625rem;
+		font-size: 1.625rem;
+		line-height: 2.1375rem;
+	}
+}
+
+h4, .h4 {
+	margin-top: 1.6428571rem;
+	margin-bottom: 0rem;
+	font-size: 1rem;
+	line-height: 1.6428571rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: -0.025em;
+
+	@include xl-min {
+		margin-top: 1.625rem;
+		line-height: 1.625rem;
+	}
+}
+
+h5, .h5 {
+	margin-top: 1.6428571rem;
+	margin-bottom: 0rem;
+	font-size: 1rem;
+	line-height: 1.6428571rem;
+	letter-spacing: 0;
+
+	@include xl-min {
+		margin-top: 1.625rem;
+		line-height: 1.625rem;
+	}
+}
+
+h6, .h6 {
+	font-size: 0.75em;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	font-weight: 600;
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+	margin-top: 0rem;
+	margin-bottom: 1.6428571rem;
+
+	@include xl-min {
+		margin-bottom: 1.625rem;
+	}
+}
+
+blockquote {
+	margin-inline-start: 1.625rem;
+	margin-inline-end: 1.625rem;
+	letter-spacing: -0.025em;
+	font-weight: 700;
+	font-style: italic;
+}
+
+cite {
+	display: block;
+}
+
+ul,
+ol {
+	margin-top: 1.6428571rem;
+	margin-bottom: 1.6428571rem;
+
+	@include xl-min {
+		margin-top: 1.625rem;
+		margin-bottom: 1.625rem;
+	}
+
+	ol,
+	ul {
+		margin-top: 0rem;
+		margin-bottom: 0rem;
+	}
+}
+
+/* Let's make sure all's aligned */
+hr,
+.hr {
+	margin: -0.125rem 0;
+	border: 0 solid;
+	border-top-width: 0.125rem;
+}
+
+sub,
+sup {
+	position: relative;
+	line-height: 0;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+@mixin small {
+	font-size: 0.8125rem;
+	line-height: 1.125rem;
+}
+

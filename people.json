@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Maggie Habkirk",
+    "position": "Vocals",
+    "img": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Kurt&hairColor=BrownDark&facialHairType=Blank&clotheType=ShirtScoopNeck&clotheColor=Gray02&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light",
+    "bio": "(insert short bio)"
+  },
+  {
+    "id": "2",
+    "name": "Kyle Mayer",
+    "position": "Guitar / Vocals",
+    "img": "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortRound&accessoriesType=Blank&hairColor=Brown&facialHairType=BeardLight&facialHairColor=Brown&clotheType=ShirtCrewNeck&clotheColor=Black&eyeType=Default&eyebrowType=UpDown&mouthType=ScreamOpen&skinColor=Light",
+    "bio": "(insert short bio)"
+  },
+  {
+    "id": "3",
+    "name": "Scott Vincent",
+    "position": "Bass",
+    "img": "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairNotTooLong&accessoriesType=Prescription02&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Black&eyeType=Squint&eyebrowType=RaisedExcited&mouthType=Serious&skinColor=Light",
+    "bio": "(insert short bio)"
+  },
+  {
+    "id": "4",
+    "name": "Darryl Lashambe",
+    "position": "Vocals",
+    "img": "https://avataaars.io/?avatarStyle=Transparent&topType=NoHair&accessoriesType=Blank&facialHairType=BeardLight&facialHairColor=Black&clotheType=ShirtCrewNeck&clotheColor=Gray02&eyeType=Happy&eyebrowType=Default&mouthType=Twinkle&skinColor=Light",
+    "bio": "(insert short bio)"
+  }
+]

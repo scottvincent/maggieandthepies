@@ -1,0 +1,150 @@
+// Maggie And The Pies Variables
+
+$white:            #ffffff;
+$theme-light:      #f5f5f0;
+$theme-grey:       #3d3e40;
+$theme-dark:       #2D2E2F;
+$black:            #000000;
+
+$theme-red:        #F24744;
+$theme-blue:       #1B1464;
+$theme-light-blue: #0071BC;
+$theme-pink:       #F077c4;
+$theme-light-pink: #F7BBE1;
+$theme-green:      #65C8D0;
+$theme-light-green:#AFE5E3;
+$theme-yellow:     #f1ce39;
+$theme-light-yellow:#F8E69C;
+
+$body-bg:          $white url("../img/pattern-blue.svg") repeat fixed center;
+$nav-bg:           $white url("../img/pattern-pink.svg") repeat fixed center;
+$footer-bg:        $white;
+$text-color:       $theme-dark;
+$heading-color:    $theme-grey;
+$link-color:       #004dcc;
+$link-hover-color: #1d4fa2;
+$btn-bg:           $black;
+$btn-color:        $black;
+$btn-hover-color:  $white;
+$section-bg:       $white;
+
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+
+$nav-width:        16rem;
+$max-width:        55rem;
+
+$timing:           0.4s;
+$timing--fast:     0.2s;
+$timing--slow:     0.8s;
+$cubic-bezier:     cubic-bezier(.025,.5,.0625,1);
+$animation-timing: 1s;
+
+$screen-sm-min:    576px;
+$screen-md-min:    768px;
+$screen-lg-min:    992px;
+$screen-xl-min:    1200px;
+$screen-xxl-min:   1400px;
+$screen-xxxl-min:  1800px;
+
+$screen-xs-max: $screen-sm-min - 1;
+$screen-sm-max: $screen-md-min - 1;
+$screen-md-max: $screen-lg-min - 1;
+$screen-lg-max: $screen-xl-min - 1;
+$screen-xl-max: $screen-xxl-min - 1;
+$screen-xxl-max: $screen-xxxl-min - 1;
+
+
+// Mixins
+@mixin narrow {
+	max-width: $max-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin wide {
+	max-width: $screen-xl-max;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin panel {
+	padding: 0 1rem;
+	z-index: 1;
+	color: var(--text-color, #{$text-color});
+	border: var(--section-border, 0.125rem solid transparent);
+	background-color: var(--section-bg, #{$section-bg});
+	backdrop-filter: blur(6px);
+}
+
+// Media Queries
+@mixin sm-min {
+	@media screen and (min-width: #{$screen-sm-min}) {
+		@content;
+	}
+}
+
+@mixin md-min {
+	@media screen and (min-width: #{$screen-md-min}) {
+		@content;
+	}
+}
+
+@mixin lg-min {
+	@media screen and (min-width: #{$screen-lg-min}) {
+		@content;
+	}
+}
+
+@mixin xl-min {
+	@media screen and (min-width: #{$screen-xl-min}) {
+		@content;
+	}
+}
+
+@mixin xxl-min {
+	@media screen and (min-width: #{$screen-xxl-min}) {
+		@content;
+	}
+}
+
+@mixin xs-max {
+	@media screen and (max-width: #{$screen-xs-max}) {
+		@content;
+	}
+}
+
+@mixin sm-max {
+	@media screen and (max-width: #{$screen-sm-max}) {
+		@content;
+	}
+}
+
+@mixin md-max {
+	@media screen and (max-width: #{$screen-md-max}) {
+		@content;
+	}
+}
+
+@mixin lg-max {
+	@media screen and (max-width: #{$screen-lg-max}) {
+		@content;
+	}
+}
+
+@mixin xl-max {
+	@media screen and (max-width: #{$screen-xl-max}) {
+		@content;
+	}
+}
+
+@mixin xxl-max {
+	@media screen and (max-width: #{$screen-xxl-max}) {
+		@content;
+	}
+}
+
+@mixin print {
+	@media print {
+		@content;
+	}
+ }
