@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "date": "2021/05/01 12:30",
+    "date": "2021/07/18 14:00",
     "city": "London, ON",
     "venue": "Scott's Basement",
     "price": "No Cover Charge",
@@ -10,7 +10,7 @@
   },
   {
     "id": "2",
-    "date": "2021/07/01 14:00",
+    "date": "2021/07/25 14:00",
     "city": "London, ON",
     "venue": "Scott's Basement",
     "price": "No Cover Charge",
@@ -19,15 +19,42 @@
   },
   {
     "id": "3",
-    "date": "2021/09/30 20:30",
+    "date": "2021/08/08 14:00",
     "city": "London, ON",
-    "venue": "Powerhouse Brewery",
+    "venue": "Scott's Basement",
     "price": "No Cover Charge",
     "link": "https://google.com/",
     "info": "Regular band practice, standing room only."
   },
   {
     "id": "4",
+    "date": "2021/08/15 14:00",
+    "city": "London, ON",
+    "venue": "Scott's Basement",
+    "price": "No Cover Charge",
+    "link": "https://google.com/",
+    "info": "Regular band practice, standing room only."
+  },
+  {
+    "id": "5",
+    "date": "2021/08/22 14:00",
+    "city": "London, ON",
+    "venue": "Scott's Basement",
+    "price": "No Cover Charge",
+    "link": "https://google.com/",
+    "info": "Regular band practice, standing room only."
+  },
+  {
+    "id": "6",
+    "date": "2021/08/29 14:00",
+    "city": "London, ON",
+    "venue": "Scott's Basement",
+    "price": "No Cover Charge",
+    "link": "https://google.com/",
+    "info": "Regular band practice, standing room only."
+  },
+  {
+    "id": "7",
     "date": "2021/10/01 20:30",
     "city": "London, ON",
     "venue": "London Brewing Co-Op",
