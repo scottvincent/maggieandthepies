@@ -57,7 +57,16 @@
     "id": "7",
     "date": "2021/10/01 20:30",
     "city": "London, ON",
-    "venue": "London Brewing Co-Op",
+    "venue": "Scott's Basement",
+    "price": "$5 Cover",
+    "link": "https://google.com/",
+    "info": "Regular band practice, standing room only."
+  },
+  {
+    "id": "8",
+    "date": "2021/11/01 20:30",
+    "city": "London, ON",
+    "venue": "Scott's Basement",
     "price": "$5 Cover",
     "link": "https://google.com/",
     "info": "Regular band practice, standing room only."
