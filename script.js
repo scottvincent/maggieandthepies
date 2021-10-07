@@ -7,7 +7,7 @@ fetch('people.json')
 		var mainContainer = document.getElementById("personnel");
 		for (var i = 0; i < data.length; i++) {
 			var figure = document.createElement("figure");
-			figure.innerHTML = '<h3>' + data[i].name + '</h3><h4>' + data[i].position + '</h4><img alt="a illustration of a face" src="' + data[i].img + '"/><hr><p>' + data[i].bio + '</p>';
+			figure.innerHTML = '<h3>' + data[i].name + '</h3><h4>' + data[i].position + '</h4>'//<img alt="a illustration of a face" src="' + data[i].img + '"/><hr><p>' + data[i].bio + '</p>';
 			mainContainer.appendChild(figure);
 		}
 	})
