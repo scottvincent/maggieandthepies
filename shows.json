@@ -25,5 +25,14 @@
         "price": "No Cover Charge",
         "link": "https://www.facebook.com/events/1680770542275220",
         "info": "Good Time Fun Band! We will be rocking all night!"
+    },
+    {
+        "id": "4",
+        "date": "2022/07/09 20:30",
+        "city": "London, ON",
+        "venue": "Fionn McCool's North London",
+        "price": "No Cover Charge",
+        "link": "",
+        "info": "Good Time Fun Band! We will be rocking all night!"
     }
 ]
