@@ -1,5 +1,11 @@
 [
   {
+    "id": "51",
+    "artist": "Olivia Rodrigo",
+    "song": "good 4 u",
+    "year": "2021"
+  },
+  {
     "id": "1",
     "artist": "Arkells",
     "song": "Years in the Making",
@@ -46,6 +52,12 @@
     "artist": "Alice Merton",
     "song": "No Roots",
     "year": "2016"
+  },
+  {
+    "id": "52",
+    "artist": "Taylor Swift",
+    "song": "Style",
+    "year": "2014"
   },
   {
     "id": "9",
@@ -174,6 +186,12 @@
     "year": "1997"
   },
   {
+    "id": "53",
+    "artist": "Amanda Marshall",
+    "song": "Let It Rain",
+    "year": "1995"
+  },
+  {
     "id": "30",
     "artist": "Cake",
     "song": "I Will Survive",
@@ -228,6 +246,12 @@
     "year": "1989"
   },
   {
+    "id": "54",
+    "artist": "Tina Turner",
+    "song": "The Best",
+    "year": "1989"
+  },
+  {
     "id": "39",
     "artist": "The Outfield",
     "song": "Your Love",
@@ -274,6 +298,18 @@
     "artist": "RUSH",
     "song": "Closer to the Heart",
     "year": "1977"
+  },
+  {
+    "id": "55",
+    "artist": "Heart",
+    "song": "Barracuda",
+    "year": "1977"
+  },
+  {
+    "id": "56",
+    "artist": "Fleetwood Mac",
+    "song": "Go Your Own Way",
+    "year": "1976"
   },
   {
     "id": "47",

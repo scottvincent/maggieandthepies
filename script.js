@@ -65,12 +65,15 @@ fetch('setlist.json')
 	})
 	.then(function (data) {
 		var setlistContainer = document.getElementById("setlist");
-
+	
 		if (!data.length) {
 			var setRow = document.createElement("tr");
 			setRow.innerHTML = '<td class="empty">Looks like we don\'t know any songs...</td>';
 			setlistContainer.appendChild(setRow);
 		} else {
+			data.sort(function(a, b){
+				return a.song - b.song;
+			});
 			for (var i = 0; i < data.length; i++) {
 				var setRow = document.createElement("tr");
 				setRow.innerHTML = '<td>' + (i+1) + '</td><td>' + data[i].artist + '</td><td>'+ data[i].song + '</td><td>' + data[i].year + '</td>';
