@@ -39,7 +39,9 @@
         "id": "5",
         "date": "2022/08/20 20:00",
         "city": "Haldimand County, ON",
-        "price": "Free",
+        "venue": "",
+        "price": "",
+        "link": "",
         "info": "Private Party"
     }
 ]

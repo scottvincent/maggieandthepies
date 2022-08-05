@@ -35,8 +35,19 @@ fetch('shows.json')
 		} else {
 			for (var i = 0; i < result.length; i++) {
 				var figure = document.createElement("figure");
+
 				var date = new Date(result[i].date);
-				figure.innerHTML = '<h3>' + date.toLocaleDateString('en-US', dateOptions) + '</h3><figcaption><a target="_blank" href="https://www.google.com/maps/search/?api=1&query='+ result[i].venue +'">' + result[i].venue + '</a><small>' + result[i].city + '</small><small>' + date.toLocaleTimeString('en-US', timeOptions) + ' &bull; ' + result[i].price + '</small></figcaption><hr><p>' + result[i].info + ' <a href="' + result[i].link + '" target="_blank">More Info...</a></p>';
+				var venue = result[i].venue ? '<a target="_blank" href="https://www.google.com/maps/search/?api=1&query='+ result[i].venue +'">' + result[i].venue + '</a>' : '';
+				var price = result[i].price ? ' &bull; ' + result[i].price : '';
+				var link = result[i].link ? ' <a href="' + result[i].link + '" target="_blank">More Info...</a>' : '';
+
+				figure.innerHTML = '<h3>' + date.toLocaleDateString('en-US', dateOptions) + '</h3>' +
+					'<figcaption>' +
+						venue +
+						'<small>' + result[i].city + '</small>' +
+						'<small>' + date.toLocaleTimeString('en-US', timeOptions) + price + '</small>' +
+					'</figcaption><hr>' +
+					'<p>' + result[i].info + link + '</p>';
 				showContainer.appendChild(figure);
 			}
 		}
@@ -65,7 +76,7 @@ fetch('setlist.json')
 	})
 	.then(function (data) {
 		var setlistContainer = document.getElementById("setlist");
-	
+
 		if (!data.length) {
 			var setRow = document.createElement("tr");
 			setRow.innerHTML = '<td class="empty">Looks like we don\'t know any songs...</td>';
