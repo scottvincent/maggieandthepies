@@ -43,5 +43,23 @@
         "price": "",
         "link": "",
         "info": "Private Party"
+    },
+    {
+        "id": "6",
+        "date": "2022/11/19 21:00",
+        "city": "St Thomas, ON",
+        "venue": "The Whiskey Rocks",
+        "price": "",
+        "link": "https://www.facebook.com/events/579547627269425",
+        "info": ""
+    },
+    {
+        "id": "7",
+        "date": "2023/03/17 20:30",
+        "city": "London, ON",
+        "venue": "The Richmond Tavern",
+        "price": "",
+        "link": "",
+        "info": ""
     }
 ]
