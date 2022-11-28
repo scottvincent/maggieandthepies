@@ -64,6 +64,15 @@
     },
     {
         "id": "8",
+        "date": "2023/01/14 17:00",
+        "city": "London, ON",
+        "venue": "Forked River Brewing",
+        "price": "",
+        "link": "",
+        "info": ""
+    },
+    {
+        "id": "9",
         "date": "2023/03/17 20:30",
         "city": "London, ON",
         "venue": "The Richmond Tavern",
