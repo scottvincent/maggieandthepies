@@ -67,17 +67,35 @@
         "date": "2023/01/14 17:00",
         "city": "London, ON",
         "venue": "Forked River Brewing",
-        "price": "",
-        "link": "",
-        "info": ""
+        "price": "No Cover Charge",
+        "link": "https://www.facebook.com/events/1399183510616500",
+        "info": "An early 5-8pm show"
     },
     {
         "id": "9",
-        "date": "2023/03/17 20:30",
+        "date": "2023/01/21 20:00",
+        "city": "Ilderton, ON",
+        "venue": "Ilderton Arena & Community Centre",
+        "price": "$15",
+        "link": "https://ildertonjets.com/Forms/2705/Hockey_Day_in_Ilderton_Dance/",
+        "info": "Hockey Day in Ilterton"
+    },
+    {
+        "id": "10",
+        "date": "2023/02/11 21:00",
+        "city": "London, ON",
+        "venue": "Dawghouse",
+        "price": "",
+        "link": "https://www.facebook.com/events/391693739674090/",
+        "info": "w/ Crush"
+    },
+    {
+        "id": "11",
+        "date": "2023/03/17 20:00",
         "city": "London, ON",
         "venue": "The Richmond Tavern",
         "price": "",
-        "link": "",
-        "info": ""
+        "link": "https://www.facebook.com/events/1183241548981186",
+        "info": "St. Patty's Day w/ Crush"
     }
 ]
