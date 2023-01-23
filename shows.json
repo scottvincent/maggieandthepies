@@ -39,7 +39,7 @@
         "id": "5",
         "date": "2022/08/20 20:00",
         "city": "Haldimand County, ON",
-        "venue": "",
+        "venue": "Private Party",
         "price": "",
         "link": "",
         "info": "Private Party"
@@ -75,7 +75,7 @@
         "id": "9",
         "date": "2023/01/21 20:00",
         "city": "Ilderton, ON",
-        "venue": "Ilderton Arena & Community Centre",
+        "venue": "Ilderton Community Centre",
         "price": "$15",
         "link": "https://ildertonjets.com/Forms/2705/Hockey_Day_in_Ilderton_Dance/",
         "info": "Hockey Day in Ilterton"
