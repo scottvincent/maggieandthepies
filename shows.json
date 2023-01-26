@@ -97,5 +97,14 @@
         "price": "",
         "link": "https://www.facebook.com/events/1183241548981186",
         "info": "St. Patty's Day w/ Crush"
+    },
+    {
+        "id": "12",
+        "date": "2023/01/14 17:00",
+        "city": "London, ON",
+        "venue": "Forked River Brewing",
+        "price": "No Cover Charge",
+        "link": "",
+        "info": "An early 5-8pm show"
     }
 ]
