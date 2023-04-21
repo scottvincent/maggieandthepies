@@ -109,12 +109,12 @@
     },
     {
         "id": "13",
-        "date": "2023/06/10 16:00",
+        "date": "2023/06/10 17:00",
         "city": "London, ON",
         "venue": "Forked River Brewing",
-        "price": "",
-        "link": "",
-        "info": "Forked Fest: 10th Anniversary"
+        "price": "$85",
+        "link": "https://forkedriverbrewing.com/products/forked-fest-2023-10-years-of-beers",
+        "info": "Forked Fest: 10th Anniversary. Evening Session 5-10pm."
     },
     {
         "id": "14",
