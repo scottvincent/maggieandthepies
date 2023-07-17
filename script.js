@@ -26,7 +26,7 @@ fetch('shows.json')
 		const dateOptions = { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' };
 		const timeOptions = { hour12: true, hour: 'numeric', minute: '2-digit'};
 		const result = data.filter(e => new Date(e.date) > new Date());
-		const past = data.filter(e => new Date(e.date) < new Date()).sort((a,b) => true ? new Date(b.date).getTime() - new Date(a.date).getTime() : new Date(a.date).getTime() - new Date(b.date).getTime());
+		const past = data.filter(e => new Date(e.date) < new Date()).sort((a,b) => false ? new Date(b.date).getTime() - new Date(a.date).getTime() : new Date(a.date).getTime() - new Date(b.date).getTime()); // False for newest first
 
 		if (!result.length) {
 			var figure = document.createElement("figure");
