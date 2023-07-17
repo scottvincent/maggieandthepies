@@ -10,7 +10,7 @@
 	fill: currentColor;
 	filter: drop-shadow(0.25em 0.5em 0 rgba(0,0,0,0.2));
 
-	@include lg-min {
+	@include md-min {
 		max-width: 360px;
 	}
 }

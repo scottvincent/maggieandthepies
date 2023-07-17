@@ -376,14 +376,25 @@ figcaption{
 	}
 }
 
+table { 
+	td {
+		padding-top: 0.25rem;
+		padding-bottom: 0.25rem;
+
+		&:not(:first-child) {
+			padding-left: 0.5rem;
+		}
+
+		&:not(:last-child) {
+			padding-right: 0.5rem;
+		}
+	}
+}
+
 details {
 	display: block;
 	margin: 1rem 0;
 	background: $theme-light;
-
-	table td {
-		padding: 0.25rem 0.5rem;
-	}
 
 	summary {
 		padding: 0.5rem 1rem;
