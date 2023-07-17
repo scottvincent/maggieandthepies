@@ -124,5 +124,14 @@
         "price": "",
         "link": "",
         "info": "Private Event"
-    }
+    },
+    {
+        "id": "15",
+        "date": "2023/08/18 17:00",
+        "city": "London, ON",
+        "venue": "Forked River Brewing",
+        "price": "No Cover Charge",
+        "link": "",
+        "info": "An early 5-8pm show"
+    },
 ]
