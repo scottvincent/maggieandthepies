@@ -133,5 +133,23 @@
         "price": "No Cover Charge",
         "link": "https://www.facebook.com/events/246075508377895/",
         "info": "An early 5-8pm show"
+    },
+    {
+        "id": "16",
+        "date": "2023/10/28 21:00",
+        "city": "London, ON",
+        "venue": "The Richmond Tavern",
+        "price": "$5",
+        "link": "https://www.facebook.com/events/227156950348441",
+        "info": "Halloween downtown, Opening for Titanium Blade"
+    },
+    {
+        "id": "17",
+        "date": "2023/11/18 21:00",
+        "city": "Ingersoll, ON",
+        "venue": "Elmhurst Inn",
+        "price": "",
+        "link": "",
+        "info": "Private Event"
     }
 ]
