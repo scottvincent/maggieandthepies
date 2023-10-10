@@ -151,5 +151,14 @@
         "price": "",
         "link": "",
         "info": "Private Event"
+    },
+    {
+        "id": "18",
+        "date": "2023/12/30 17:00",
+        "city": "London, ON",
+        "venue": "Forked River Brewing",
+        "price": "",
+        "link": "",
+        "info": "Start ending the year right with us! An early 5-8pm show for New Year's Eve Eve."
     }
 ]
