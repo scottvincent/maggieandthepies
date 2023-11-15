@@ -148,16 +148,16 @@
         "date": "2023/11/18 21:00",
         "city": "Ingersoll, ON",
         "venue": "Elmhurst Inn",
-        "price": "",
-        "link": "",
-        "info": "Private Event"
+        "price": "$150",
+        "link": "https://www.facebook.com/KiwanisIngersoll",
+        "info": "Kiwanis Winter Gala"
     },
     {
         "id": "18",
         "date": "2023/12/30 17:00",
         "city": "London, ON",
         "venue": "Forked River Brewing",
-        "price": "",
+        "price": "No Cover Charge",
         "link": "",
         "info": "Start ending the year right with us! An early 5-8pm show for New Year's Eve Eve."
     }

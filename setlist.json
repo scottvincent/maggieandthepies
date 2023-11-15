@@ -1,338 +1,410 @@
 [
   {
-    "id": "51",
+    "id": "1",
     "artist": "Olivia Rodrigo",
     "song": "good 4 u",
     "year": "2021"
   },
   {
-    "id": "1",
+    "id": "2",
     "artist": "Arkells",
     "song": "Years in the Making",
     "year": "2020"
   },
   {
-    "id": "2",
+    "id": "3",
     "artist": "Miley Cyrus &amp; Stevie Nicks",
     "song": "Midnight Sky (Edge of Midnight)",
     "year": "2020"
   },
   {
-    "id": "3",
+    "id": "4",
+    "artist": "Harry Styles",
+    "song": "Adore You",
+    "year": "2019"
+  },
+  {
+    "id": "5",
     "artist": "Pomplamoose",
     "song": "Sweet Dreams/Seven Nation",
     "year": "2019"
   },
   {
-    "id": "4",
+    "id": "6",
     "artist": "Jonas Brothers",
     "song": "Sucker",
     "year": "2019"
   },
   {
-    "id": "5",
+    "id": "7",
     "artist": "Bille Eilish",
     "song": "Bad Guy",
     "year": "2019"
   },
   {
-    "id": "6",
+    "id": "8",
     "artist": "The Struts",
     "song": "Body Talks",
     "year": "2018"
   },
   {
-    "id": "7",
+    "id": "9",
     "artist": "Dua Lipa",
     "song": "New Rules",
     "year": "2017"
   },
   {
-    "id": "8",
+    "id": "10",
     "artist": "Alice Merton",
     "song": "No Roots",
     "year": "2016"
   },
   {
-    "id": "52",
+    "id": "11",
     "artist": "Taylor Swift",
     "song": "Style",
     "year": "2014"
   },
   {
-    "id": "9",
+    "id": "12",
     "artist": "Walk The Moon",
     "song": "Shut Up and Dance",
     "year": "2014"
   },
   {
-    "id": "10",
+    "id": "13",
     "artist": "The Pretty Reckless",
     "song": "Heaven Knows",
     "year": "2013"
   },
   {
-    "id": "11",
+    "id": "14",
     "artist": "Paramore",
     "song": "Still Into You",
     "year": "2013"
   },
   {
-    "id": "12",
+    "id": "15",
     "artist": "Serena Ryder",
     "song": "Stompa",
     "year": "2012"
   },
   {
-    "id": "13",
+    "id": "16",
     "artist": "Miranda Lambert",
     "song": "Mama's Broken Heart",
     "year": "2011"
   },
   {
-    "id": "14",
+    "id": "17",
+    "artist": "Young The Giant",
+    "song": "My Body",
+    "year": "2010"
+  },
+  {
+    "id": "18",
     "artist": "Adele",
     "song": "Rolling in the Deep",
     "year": "2010"
   },
   {
-    "id": "15",
+    "id": "19",
     "artist": "Metric",
     "song": "Gimme Sympathy",
     "year": "2009"
   },
   {
-    "id": "16",
+    "id": "20",
     "artist": "Amy Winehouse",
     "song": "Valerie",
     "year": "2007"
   },
   {
-    "id": "17",
+    "id": "21",
     "artist": "P!nk",
     "song": "Who Knew",
     "year": "2006"
   },
   {
-    "id": "18",
+    "id": "22",
     "artist": "John Mayer",
     "song": "Slow Dancing in a Burning Room",
     "year": "2006"
   },
   {
-    "id": "19",
+    "id": "23",
     "artist": "Jace Everett",
     "song": "Bad Things",
     "year": "2005"
   },
   {
-    "id": "20",
+    "id": "24",
     "artist": "KT Tunstall",
     "song": "Black Horse and Cherry Tree",
     "year": "2004"
   },
   {
-    "id": "21",
+    "id": "25",
     "artist": "Britney Spears",
     "song": "Toxic",
     "year": "2003"
   },
   {
-    "id": "22",
+    "id": "26",
     "artist": "Muse",
     "song": "Hysteria",
     "year": "2003"
   },
   {
-    "id": "23",
+    "id": "27",
     "artist": "No Doubt",
     "song": "Just A Girl",
     "year": "2003"
   },
   {
-    "id": "24",
+    "id": "28",
     "artist": "The Darkness",
     "song": "I Believe In A Thing Called Love",
     "year": "2003"
   },
   {
-    "id": "25",
+    "id": "29",
     "artist": "Maroon 5",
     "song": "Harder to Breathe",
     "year": "2002"
   },
   {
-    "id": "26",
+    "id": "30",
     "artist": "The Chicks",
     "song": "Goodbye Earl",
     "year": "1999"
   },
   {
-    "id": "27",
+    "id": "31",
     "artist": "Big Wreck",
     "song": "That Song",
     "year": "1997"
   },
   {
-    "id": "28",
+    "id": "32",
     "artist": "Foo Fighters",
     "song": "My Hero",
     "year": "1997"
   },
   {
-    "id": "29",
+    "id": "33",
     "artist": "Holly McNarland",
     "song": "Numb",
     "year": "1997"
   },
   {
-    "id": "53",
-    "artist": "Amanda Marshall",
-    "song": "Let It Rain",
-    "year": "1995"
-  },
-  {
-    "id": "30",
+    "id": "34",
     "artist": "Cake",
     "song": "I Will Survive",
     "year": "1996"
   },
   {
-    "id": "31",
+    "id": "35",
     "artist": "The Cardigans",
     "song": "Lovefool",
     "year": "1996"
   },
   {
-    "id": "32",
+    "id": "36",
+    "artist": "Amanda Marshall",
+    "song": "Let It Rain",
+    "year": "1995"
+  },
+  {
+    "id": "37",
+    "artist": "The Cranberries",
+    "song": "Zombie",
+    "year": "1994"
+  },
+  {
+    "id": "38",
+    "artist": "The Cranberries",
+    "song": "Dreams",
+    "year": "1993"
+  },
+  {
+    "id": "39",
     "artist": "Melissa Etheridge",
     "song": "Come To My Window",
     "year": "1993"
   },
   {
-    "id": "33",
+    "id": "40",
     "artist": "Gin Blossoms",
     "song": "Hey Jealousy",
     "year": "1992"
   },
   {
-    "id": "34",
+    "id": "41",
     "artist": "Roy Orbison",
     "song": "I Drove All Night",
     "year": "1992"
   },
   {
-    "id": "35",
+    "id": "42",
     "artist": "Spin Doctors",
     "song": "Two Princes",
     "year": "1991"
   },
   {
-    "id": "36",
+    "id": "43",
     "artist": "Divinyls",
     "song": "I Touch Myself",
     "year": "1990"
   },
   {
-    "id": "37",
+    "id": "44",
+    "artist": "Blue Rodeo",
+    "song": "Til I Am Myself Again",
+    "year": "1990"
+  },
+  {
+    "id": "45",
     "artist": "Tragically Hip",
     "song": "Blow at High Dough",
     "year": "1989"
   },
   {
-    "id": "38",
+    "id": "46",
     "artist": "Alannah Myles",
     "song": "Black Velvet",
     "year": "1989"
   },
   {
-    "id": "54",
+    "id": "47",
     "artist": "Tina Turner",
     "song": "The Best",
     "year": "1989"
   },
   {
-    "id": "39",
+    "id": "48",
+    "artist": "Whitney Houston",
+    "song": "I Wanna Dance With Somebody",
+    "year": "1987"
+  },
+  {
+    "id": "49",
     "artist": "The Outfield",
     "song": "Your Love",
     "year": "1985"
   },
   {
-    "id": "40",
+    "id": "50",
+    "artist": "The Cult",
+    "song": "She Sells Sanctuary",
+    "year": "1985"
+  },
+  {
+    "id": "51",
     "artist": "Tina Turner &amp; Bryan Adams",
     "song": "It's Only Love",
     "year": "1984"
   },
   {
-    "id": "41",
+    "id": "52",
     "artist": "Queen",
     "song": "I Want to Break Free",
     "year": "1984"
   },
   {
-    "id": "42",
+    "id": "53",
     "artist": "Don Henley",
     "song": "Boys of Summer",
     "year": "1984"
   },
   {
-    "id": "43",
+    "id": "54",
     "artist": "Journey",
     "song": "Don't Stop Believing",
     "year": "1981"
   },
   {
-    "id": "44",
+    "id": "55",
     "artist": "Stevie Nicks &amp; Tom Petty",
     "song": "Stop Draggin My Heart Around",
     "year": "1981"
   },
   {
-    "id": "45",
+    "id": "56",
     "artist": "Pat Benatar",
     "song": "Hit Me With Your Best Shot",
     "year": "1980"
   },
   {
-    "id": "46",
+    "id": "57",
+    "artist": "Rick Springfield",
+    "song": "Jessie's Girl",
+    "year": "1980"
+  },
+  {
+    "id": "58",
     "artist": "RUSH",
     "song": "Closer to the Heart",
     "year": "1977"
   },
   {
-    "id": "55",
+    "id": "59",
     "artist": "Heart",
     "song": "Barracuda",
     "year": "1977"
   },
   {
-    "id": "56",
+    "id": "60",
+    "artist": "Trooper",
+    "song": "We're Here For A Good Time",
+    "year": "1977"
+  },
+  {
+    "id": "61",
     "artist": "Fleetwood Mac",
     "song": "Go Your Own Way",
     "year": "1976"
   },
   {
-    "id": "47",
+    "id": "62",
+    "artist": "Thin Lizzy",
+    "song": "The Boys Are Back In Town",
+    "year": "1976"
+  },
+  {
+    "id": "63",
     "artist": "Elvin Bishop",
     "song": "Fooled Around and Fell In Love",
     "year": "1975"
   },
   {
-    "id": "48",
+    "id": "64",
+    "artist": "The Eagles",
+    "song": "One Of These Nights",
+    "year": "1975"
+  },
+  {
+    "id": "65",
     "artist": "Linda Ronstadt",
     "song": "You're No Good",
     "year": "1974"
   },
   {
-    "id": "49",
+    "id": "66",
     "artist": "Sweet",
     "song": "Ballroom Blitz",
     "year": "1974"
   },
   {
-    "id": "50",
+    "id": "67",
     "artist": "Dolly Parton",
     "song": "Jolene",
     "year": "1973"
+  },
+  {
+    "id": "68",
+    "artist": "Screamin' Jay Hawkins",
+    "song": "I Put A Spell On You",
+    "year": "1956"
   }
 ]
