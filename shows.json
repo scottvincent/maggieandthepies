@@ -160,5 +160,14 @@
         "price": "No Cover Charge",
         "link": "",
         "info": "Start ending the year right with us! An early 5-8pm show for New Year's Eve Eve."
+    },
+    {
+        "id": "19",
+        "date": "2024/03/23 17:00",
+        "city": "London, ON",
+        "venue": "Forked River Brewing",
+        "price": "No Cover Charge",
+        "link": "",
+        "info": "Yes, we're back in the taproom and playing at our favourite time of day, 5pm to 8pm."
     }
 ]
