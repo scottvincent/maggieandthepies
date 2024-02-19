@@ -1,5 +1,11 @@
 [
   {
+    "id": "69",
+    "artist": "Dua Lipa",
+    "song": "Dance The Night",
+    "year": "2023"
+  },
+  {
     "id": "1",
     "artist": "Olivia Rodrigo",
     "song": "good 4 u",
@@ -406,11 +412,5 @@
     "artist": "Screamin' Jay Hawkins",
     "song": "I Put A Spell On You",
     "year": "1956"
-  },
-  {
-    "id": "69",
-    "artist": "Dua Lipa",
-    "song": "Dance The Night",
-    "year": "2023"
   }
 ]
