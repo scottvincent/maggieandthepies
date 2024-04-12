@@ -169,5 +169,23 @@
     "price": "No Cover Charge",
     "link": "",
     "info": "Yes, we're back in the taproom and playing at our favourite time of day, 5pm to 8pm."
+  },
+  {
+    "id": "20",
+    "date": "2024/04/18 16:00",
+    "city": "London, ON",
+    "venue": "German Canadian Club",
+    "price": "",
+    "link": "",
+    "info": "Private Event"
+  },
+  {
+    "id": "21",
+    "date": "2024/08/18 12:00",
+    "city": "London, ON",
+    "venue": "Palasad Social Bowl North",
+    "price": "",
+    "link": "",
+    "info": ""
   }
 ]
