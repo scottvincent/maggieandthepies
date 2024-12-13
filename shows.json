@@ -223,5 +223,14 @@
     "price": "",
     "link": "",
     "info": "Participating in the 'Women Who Rock for Men's Mental Health' Showcase"
+  },
+   {
+    "id": "26",
+    "date": "2025/01/25 17:00",
+    "city": "London, ON",
+    "venue": "Forked River Brewing",
+    "price": "No Cover",
+    "link": "",
+    "info": "Making our triumphant return after our fall hiatus, 5pm to 8pm."
   }
 ]
