@@ -412,5 +412,71 @@
     "artist": "Screamin' Jay Hawkins",
     "song": "I Put A Spell On You",
     "year": "1956"
+  },
+  {
+    "id": "69",
+    "artist": "The Beaches",
+    "song": "Blame Brett",
+    "year": "2023"
+  },
+  {
+    "id": "70",
+    "artist": "Wheetus",
+    "song": "Teenage Dirtbag",
+    "year": "2000"
+  },
+  {
+    "id": "71",
+    "artist": "The Killers",
+    "song": "All These Things That I've Done",
+    "year": "2004"
+  },
+  {
+    "id": "72",
+    "artist": "Sheryl Crow",
+    "song": "Everyday is a Winding Road",
+    "year": "1996"
+  },
+  {
+    "id": "73",
+    "artist": "Tragically Hip",
+    "song": "Fireworks",
+    "year": "1998"
+  },
+  {
+    "id": "74",
+    "artist": "Chappell Roan",
+    "song": "Good Luck Babe",
+    "year": "2024"
+  },
+  {
+    "id": "75",
+    "artist": "Johnny Cash",
+    "song": "Jackson",
+    "year": "1967"
+  },
+  {
+    "id": "76",
+    "artist": "Bon Jovi",
+    "song": "Livin' On A Prayer",
+    "year": "1986"
+  },
+  {
+    "id": "77",
+    "artist": "Tina Turner",
+    "song": "Proud Mary",
+    "year": "1971"
+  },
+  {
+    "id": "78",
+    "artist": "Bryan Adams",
+    "song": "Summer of '69",
+    "year": "1985"
+  },
+  {
+    "id": "79",
+    "artist": "John Travolta &amp; Olivia Newton-John",
+    "song": "You're The One That I Want",
+    "year": "1978"
   }
 ]
