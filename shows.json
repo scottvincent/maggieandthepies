@@ -259,9 +259,17 @@
     "price": "$15",
     "link": "https://forkedriverbrewing.com/collections/ticketed-events/products/forked-fest-june-7th",
     "info": "We return for our 3rd Forked Fest! 2pm to 5pm. Your $15 admission fee (plus tax) includes entry, a commemorative glass (yours to keep!), and your choice of a full pour or 3 samples. 18 and under get in Free"
+  },  {
+    "id": "30",
+    "date": "2025/07/19 21:00",
+    "city": "London, ON",
+    "venue": "The Dawghouse",
+    "price": "No Cover",
+    "link": "",
+    "info": ""
   },
   {
-    "id": "30",
+    "id": "31",
     "date": "2025/08/09 17:00",
     "city": "London, ON",
     "venue": "Forked River Brewing",
@@ -270,7 +278,7 @@
     "info": ""
   },
   {
-    "id": "31",
+    "id": "32",
     "date": "2025/09/20 17:00",
     "city": "London, ON",
     "venue": "Forked River Brewing",
