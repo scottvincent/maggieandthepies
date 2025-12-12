@@ -288,6 +288,15 @@
   },
   {
     "id": "33",
+    "date": "2026/01/02 21:00",
+    "city": "London, ON",
+    "venue": "Mustang Sally's",
+    "price": "No Cover",
+    "link": "",
+    "info": "Starting off 2026 right with our first time playing Mustang Sally's. 9pm - 1am"
+  },
+  {
+    "id": "34",
     "date": "2026/01/10 19:00",
     "city": "London, ON",
     "venue": "Forked River Brewing",
@@ -296,7 +305,7 @@
     "info": "7pm to 10pm"
   },
   {
-    "id": "34",
+    "id": "35",
     "date": "2026/03/14 19:00",
     "city": "London, ON",
     "venue": "Forked River Brewing",
@@ -305,7 +314,7 @@
     "info": "7pm to 10pm"
   },
   {
-    "id": "35",
+    "id": "36",
     "date": "2026/05/16 19:00",
     "city": "London, ON",
     "venue": "Forked River Brewing",
@@ -314,7 +323,7 @@
     "info": "7pm to 10pm"
   },
   {
-    "id": "36",
+    "id": "37",
     "date": "2026/07/11 19:00",
     "city": "London, ON",
     "venue": "Forked River Brewing",
