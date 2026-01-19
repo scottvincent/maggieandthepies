@@ -89,7 +89,7 @@ fetch('setlist.json')
     thead.innerHTML = '<tr class="sr-only"><th scope="col">Index</th><th scope="col">Artist</th><th scope="col">Song Title</th><th scope="col">Release Year</th></tr>';
     setlistContainer.appendChild(thead);
     data.sort(function(a, b){
-      return a.song - b.song;
+      return b.artist - a.artist;
     });
     for (var i = 0; i < data.length; i++) {
       var setRow = document.createElement("tr");
