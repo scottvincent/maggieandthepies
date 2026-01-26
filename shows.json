@@ -305,6 +305,15 @@
     "info": "9pm - 1am"
   },
   {
+    "id": "35",
+    "date": "2026/02/20 21:00",
+    "city": "London, ON",
+    "venue": "The Dawghouse",
+    "price": "No Cover",
+    "link": "",
+    "info": "9pm to 1am"
+  },
+  {
     "id": "36",
     "date": "2026/03/14 19:00",
     "city": "London, ON",
@@ -314,7 +323,16 @@
     "info": "7pm to 10pm"
   },
   {
-    "id": "36",
+    "id": "37",
+    "date": "2026/03/28 21:00",
+    "city": "London, ON",
+    "venue": "The Dawghouse",
+    "price": "No Cover",
+    "link": "",
+    "info": "9pm to 1am"
+  },
+  {
+    "id": "38",
     "date": "2026/05/16 19:00",
     "city": "London, ON",
     "venue": "Forked River Brewing",
@@ -323,10 +341,19 @@
     "info": "7pm to 10pm"
   },
   {
-    "id": "37",
+    "id": "39",
     "date": "2026/07/11 19:00",
     "city": "London, ON",
     "venue": "Forked River Brewing",
+    "price": "No Cover",
+    "link": "",
+    "info": "7pm to 10pm"
+  },
+  {
+    "id": "40",
+    "date": "2026/07/11 19:00",
+    "city": "Port Stanley, ON",
+    "venue": "Port Stanley Brewing Co.",
     "price": "No Cover",
     "link": "",
     "info": "7pm to 10pm"
