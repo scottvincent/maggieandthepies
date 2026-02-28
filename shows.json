@@ -589,6 +589,13 @@
   {
     "@context": "https://schema.org",
     "@type": "Event",
+    "name": "Private Event with Maggie and The Pies",
+    "startDate": "2026-04-09T19:00",
+    "description": "Private Event."
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
     "name": "Maggie and The Pies at Forked River Brewing",
     "startDate": "2026-05-16T19:00",
     "location": {
