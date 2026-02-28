@@ -86,7 +86,7 @@ fetchJSON('people.json')
       const randomTilt = (seededRandom(parseInt(person.id || index)) - 0.5) * 10;
       card.style.setProperty('--card-tilt', `${randomTilt}deg`);
 
-      const flipper = document.createElement('article');
+      const flipper = document.createElement('div');
       flipper.setAttribute('aria-label', `${person.name} baseball card`);
       flipper.setAttribute('role', 'button');
       flipper.setAttribute('tabindex', '0');
