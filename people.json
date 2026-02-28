@@ -2,29 +2,29 @@
   {
     "id": "1",
     "name": "Maggie Habkirk",
-    "position": "Lead Vocals",
-    "img": "/img/MATP-Maggie.png",
+    "position": "Singer",
+    "img": "/img/Maggie-2.jpg",
     "bio": "(insert short bio)"
   },
   {
     "id": "2",
     "name": "Kyle Mayer",
-    "position": "Guitar / Vocals",
-    "img": "/img/MATP-Kyle.png",
+    "position": "Guitarist",
+    "img": "/img/Kyle-2.jpg",
     "bio": "(insert short bio)"
   },
   {
     "id": "3",
     "name": "Scott Vincent",
-    "position": "Bass Guitar",
-    "img": "/img/MATP-Scott.png",
+    "position": "Bassist",
+    "img": "/img/Scott-2.jpg",
     "bio": "(insert short bio)"
   },
   {
     "id": "4",
     "name": "Darryl Lashambe",
-    "position": "Drums",
-    "img": "/img/MATP-Darryl.png",
+    "position": "Drummer",
+    "img": "/img/Darryl.jpg",
     "bio": "(insert short bio)"
   }
 ]
