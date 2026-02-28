@@ -1,9 +1,22 @@
 // Shared date formatting options
 const DATE_OPTIONS = { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' };
 const TIME_OPTIONS = { hour12: true, hour: 'numeric', minute: '2-digit' };
+const DAY_OPTIONS = { weekday: 'long' };
+const MONTH_DAY_OPTIONS = { month: 'long', day: 'numeric' };
+
+const dateFormatter = new Intl.DateTimeFormat('en-US', DATE_OPTIONS);
+const timeFormatter = new Intl.DateTimeFormat('en-US', TIME_OPTIONS);
+const dayFormatter = new Intl.DateTimeFormat('en-US', DAY_OPTIONS);
+const monthDayFormatter = new Intl.DateTimeFormat('en-US', MONTH_DAY_OPTIONS);
 
 // Utility function for fetching JSON
-const fetchJSON = (url) => fetch(url).then(response => response.json());
+const fetchJSON = (url) =>
+  fetch(url).then(response => {
+    if (!response.ok) {
+      throw new Error(`Failed to fetch ${url}: ${response.status}`);
+    }
+    return response.json();
+  });
 
 // Utility function to create and append elements
 const createElement = (tag, innerHTML, parent) => {
@@ -112,11 +125,17 @@ fetchJSON('shows.json')
     const showContainer = document.getElementById('shows');
     const pastContainer = document.getElementById('past');
     const now = new Date();
-    
-    const upcomingShows = data.filter(show => new Date(show.startDate) > now);
-    const pastShows = data
-      .filter(show => new Date(show.startDate) < now)
-      .sort((a, b) => new Date(b.startDate) - new Date(a.startDate)); // Newest first
+
+    // Parse each date once and reuse it for filtering, sorting, and formatting.
+    const showsWithDate = data.map(show => ({
+      ...show,
+      _parsedDate: new Date(show.startDate)
+    }));
+
+    const upcomingShows = showsWithDate.filter(show => show._parsedDate > now);
+    const pastShows = showsWithDate
+      .filter(show => show._parsedDate < now)
+      .sort((a, b) => b._parsedDate - a._parsedDate); // Newest first
 
     // Upcoming shows
     if (!upcomingShows.length) {
@@ -124,19 +143,19 @@ fetchJSON('shows.json')
     } else {
       const fragment = document.createDocumentFragment();
       upcomingShows.forEach(show => {
-        const date = new Date(show.startDate);
+        const date = show._parsedDate;
         const venue = show.location?.name 
-          ? `<a target="_blank" href="https://www.google.com/maps/search/?api=1&query=${show.location.name}">${show.location.name}</a>` 
+          ? `<a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(show.location.name)}">${show.location.name}</a>` 
           : '';
         const price = show.offers?.price ? ` &bull; $${show.offers.price}` : '';
-        const link = show.url ? ` <a href="${show.url}" target="_blank">More Info...</a>` : '';
+        const link = show.url ? ` <a href="${show.url}" target="_blank" rel="noopener noreferrer">More Info...</a>` : '';
 
         const figure = document.createElement('figure');
-        figure.innerHTML = `<h3>${date.toLocaleDateString('en-US', DATE_OPTIONS)}</h3>
+        figure.innerHTML = `<h3>${dateFormatter.format(date)}</h3>
           <figcaption>
             ${venue}
             <small>${show.location?.address || ''}</small>
-            <small>${date.toLocaleTimeString('en-US', TIME_OPTIONS)}${price}</small>
+            <small>${timeFormatter.format(date)}${price}</small>
           </figcaption><hr>
           <p>${show.description || ''}${link}</p>`;
         fragment.appendChild(figure);
@@ -153,11 +172,9 @@ fetchJSON('shows.json')
       
       // Group shows by year
       let currentYear = null;
-      const dateOptionsDay = { weekday: 'long' };
-      const dateOptionsMonthDay = { month: 'long', day: 'numeric' };
       
       pastShows.forEach(show => {
-        const date = new Date(show.startDate);
+        const date = show._parsedDate;
         const showYear = date.getFullYear();
         
         // Add year header row if year changed
@@ -169,8 +186,8 @@ fetchJSON('shows.json')
         }
         
         // Add show row without year
-        const dayOfWeek = date.toLocaleDateString('en-US', dateOptionsDay);
-        const monthDay = date.toLocaleDateString('en-US', dateOptionsMonthDay);
+        const dayOfWeek = dayFormatter.format(date);
+        const monthDay = monthDayFormatter.format(date);
         const row = document.createElement('tr');
         row.innerHTML = `<td><small>${dayOfWeek}</small><br>${monthDay}</td>
           <td>${show.location?.name || ''}<br><small>${show.location?.address || ''}</small></td>`;
