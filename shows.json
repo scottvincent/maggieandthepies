@@ -555,23 +555,6 @@
   {
     "@context": "https://schema.org",
     "@type": "Event",
-    "name": "Maggie and The Pies at Forked River Brewing",
-    "startDate": "2026-03-14T19:00",
-    "location": {
-      "@type": "Place",
-      "name": "Forked River Brewing",
-      "address": "London, ON"
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "CAD"
-    },
-    "description": "No Cover. 7pm to 10pm"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Event",
     "name": "Maggie and The Pies at The Dawghouse",
     "startDate": "2026-03-28T21:00",
     "location": {
