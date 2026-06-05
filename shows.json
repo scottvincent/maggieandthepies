@@ -596,6 +596,23 @@
   {
     "@context": "https://schema.org",
     "@type": "Event",
+    "name": "Pride London Beer Release. Featuring Maggie and The Pies",
+    "startDate": "2026-06-06T18:00",
+    "location": {
+      "@type": "Place",
+      "name": "London Brewing Co-op",
+      "address": "London, ON"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "CAD"
+    },
+    "description": "No better way to announce we'll be the official beer sponsor of Pride London FIVE (!!!) years running than a tasty new beer collab! 🏳️‍🌈 As we kick off another Pride Month, we're celebrating the organizations putting in the work to organize across our community. Join us this Saturday, June 6th at 6PM to officially launch Pink for Pride. This raspberry and hibiscus infused light lager is going to be our go-to for festival sipping this year! Find it in the taproom all summer long, and at this year's Pride Festival Beer Garden! No Cover. 6pm to 9pm"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
     "name": "Maggie and The Pies at Forked River Brewing",
     "startDate": "2026-07-11T19:00",
     "location": {
