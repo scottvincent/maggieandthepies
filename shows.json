@@ -574,6 +574,11 @@
     "@type": "Event",
     "name": "Private Event with Maggie and The Pies",
     "startDate": "2026-04-09T19:00",
+    "location": {
+      "@type": "Place",
+      "name": "German Canadian Club",
+      "address": "London, ON"
+    },
     "description": "Private Event."
   },
   {
