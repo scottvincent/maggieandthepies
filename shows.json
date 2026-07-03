@@ -636,19 +636,19 @@
     "@context": "https://schema.org",
     "@type": "Event",
     "name": "Pride London Pride Parade",
-    "startDate": "2026-07-19T17:00",
+    "startDate": "2026-07-19T13:00",
     "location": {
       "@type": "Place",
       "name": "Victoria Park London ON",
       "address": "London, ON"
     },
-    "url": "https://pridelondon.ca/event/parade/",
+    "url": "https://pridelondon.ca/event/sunday/",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "CAD"
     },
-    "description": "At the end of the 🏳️‍🌈 parade route, we'll be playing at the Big Blue Bubble Stage. 5 - 6pm"
+    "description": "At the end of the 🏳️‍🌈 parade route, we'll be playing in the park"
   },
   {
     "@context": "https://schema.org",
