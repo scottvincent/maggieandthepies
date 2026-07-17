@@ -41,6 +41,45 @@
     </script>
 
     <link rel="stylesheet" href="styles/main.css" />
+    <style>
+      @page {
+        size: Letter landscape;
+        margin: 0.25in;
+      }
+
+      @media print {
+        body {
+          width: auto !important;
+          padding: 0 !important;
+          background: #fff !important;
+        }
+
+        nav {
+          display: none;
+        }
+
+        #main,
+        [role="main"] {
+          width: 100%;
+          margin: 0;
+        }
+
+        [role="main"] > img {
+          width: 1.75in !important;
+          margin: 0 0 0.08in !important;
+        }
+
+        #band-plot,
+        #venue-plot {
+          width: 100%;
+          margin: 0 !important;
+          overflow: visible;
+          font-size: 5pt !important;
+          line-height: 1.15 !important;
+          white-space: pre;
+        }
+      }
+    </style>
   </head>
   <body style="--body-bg: #fff; --text-color: #000; padding: 30px">
     <nav>
@@ -48,26 +87,28 @@
     </nav>
     <div class="" id="main">
       <div class="" role="main">
-        <pre style="margin: 2rem auto; font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 14px; line-height: 1.5">
-   MAGGIE AND THE PIES                                                                                                          ▄▄
-   -----------------------                                                                                                    ▄█▀▀█
-   STAGE PLOT &amp; INPUT LIST                                                                                        ▄          ██ ▄██
-   -----------------------                                                                                       ▀  ▄▄▄      ▄█▄     ▄
-                                                                                          ▄                  ▄  █  █▀▀█    ██▀▄▄████▀▀
-   Notes:                                                                           ▄█ ▄██▀        ▄▄▄█ ▄█▀▀█▀ █▀ ███▀ █  ██    █▄
-   - PA provided by and set mixed by venue                                         ███▄██▀ ▄▄▄▄█ ▄█▀▀██ █▀ ██ ██ ▄██▄██   ██▄  ▄█▀
-   - Band mixes own IEM, no monitors needed                                       █▀██ █▀ █▀ ██  █▀ ██ ██▄██▀ ███  ▀▀▀     ▀███▀▀
-   - All mics, cables and stands listed provided by band                         █▀ █ ██ ██ ▄█▄▄██▄██▀  ████
-   - 4 Power Outlets Required                                                   ██ ▀█ ██ ██████▀ ▀███    ██             ▄▄
-                                                                               ██     ██  ▀▀     ▄██   ██▀          ▄▄██▀▀█  ▄█       ▄
-   Optional:                                                                 ▄██      ▀█        ▀█▀                ▄█▀█▀  █ ▄   ▄██  ██
-   - Additional micing of Drums (snare, toms, cymbals, or hats)            ▄███                    ▄▄▄▄▄▄▄        ██ ██ ▄█▀▄█  ██▄▀ ▀▀█
-     is at the discretion of venue &amp; provides all mics, stands,                                ▄▀▀▀██▀▀█▀         ▀▀▄██▀▀ ▄█  ██▀ ▄█▄▄█▀
-     clips, cables required.                                                                   █▄▄██  ██▄  ▄██     ▄█▀    ██▄█▀███▀ ▀▀▀
-                                                                                                  █  ▄█ █ ▄█▀▀▄   ▄█▀     ▀█▀
-                                                                                                 █▀ ▄█ ██▄▀███   ▄█▀
-                                                                                                ██  █▀ ▀▀       ▀▀▀
-   ┌──────────────────────┐                                   XLR                              ▀▀
+        <img
+          src="img/Maggieandthepies-text.svg"
+          alt="Maggie and The Pies"
+          style="display: block; width: min(100%, 280px); height: auto; margin: 2rem 0 0"
+        />
+        <pre id="band-plot" style="margin: 2rem auto; font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 14px; line-height: 1.5">
+   -----------------------
+   STAGE PLOT &amp; INPUT LIST
+   -----------------------
+
+   Notes:
+   - PA provided by and set mixed by venue
+   - Band mixes own IEM, no monitors needed
+   - All mics, cables and stands listed provided by band
+   - 4 Power Outlets Required
+
+   Optional:
+   - Additional micing of Drums (snare, toms, cymbals, or hats)
+     is at the discretion of venue &amp; provides all mics, stands,
+     clips, cables required.
+
+  ┌──────────────────────┐                                   XLR
    │ ◀ Input 1 Kick       │←──────────────────────────────────────────────────────┐
    ┌──────────────────────┐                                                       │
    │ ◀ Input 2 Bass       │←─────────────┐                                        │
@@ -110,6 +151,69 @@
    Any questions or concerns, please contact Scott at maggieandthepies@gmail.com
   </pre
         >
+        <pre
+          id="venue-plot"
+          style="display: none; margin: 2rem auto; font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 14px; line-height: 1.5"
+        >
+            -----------------------
+            STAGE PLOT & INPUT LIST
+            -----------------------
+
+                                                                               ╔═════════╗
+                                                                               ║         ║
+                                                                               ║         ║
+                                                            Darryl             ║ Monitor ║
+                                                            Drums              ║         ║
+                                                                               ║         ║
+       ╔═════┌────────────────┐                     ┌─────────────────────┐    ╚═════════╝           ╔═════┌────────────────┐
+       ║ PWR │   Guitar Amp   │                     │      Drum Kit       │                          ║ PWR │    Bass Amp    │
+       ╚═════│      2x12      │                     │      --------       │                          ╚═════│      2x10      │
+             │   ----------   │                     │        Kick         │                                │   ----------   │
+             │    XLR Out     │                     │        Snare        │                                │    XLR Out     │
+             │                │                     │       Hi Tom        │                                │                │
+             └────────────────┘                     │       Mid Tom       │                                └────────────────┘
+                                                    │       Lo Tom        │
+                                                    │       Hi Hats       │
+                                                    │       Cymbals       │
+                                                    └─────────────────────┘
+
+
+
+
+                     Kyle                                     Maggie                                        Scott
+                     Guitar/Vocal                             Vocal                                         Bass
+
+                           ┌───────┐                        ┌───────┐
+                           │ Vocal │                        │ Vocal │
+ ╔═════┌────────────────┐  │  Mic  │                        │  Mic  │
+ ║ PWR │  Guitar Pedal  │  │       │                        │       │
+ ╚═════└────────────────┘  └───────┘                        └───────┘
+
+             ╔═══════════════════╗                      ╔═════════════════╗                          ╔═════════════════╗
+             ║                   ║                      ║                 ║                          ║                 ║
+             ║      Monitor      ║                      ║     Monitor     ║                          ║     Monitor     ║
+             ╚═══════════════════╝                      ╚═════════════════╝                          ╚═════════════════╝
+
+
+
+
+
+      ┌─────────────┐─────────────────┐
+      │ Input       │ Notes           │             PROVIDED BY VENUE
+      │─────────────│─────────────────│             - All Drum Mics
+   1  │ Kick        │                 │             - All Mic Stands
+   2  │ Snare       │                 │             - All XLR cables
+   3  │ Hi Tom      │                 │             - Monitors
+   4  │ Mid Tom     │                 │             - PA System
+   5  │ Lo Tom      │                 │             - Power Outlets
+   6  │ Hi Hats     │                 │
+   7  │ Cymbals     │                 │             PROVIDED BY BAND
+   8  │ Bass        │ XLR Out         │             - Vocal Mics
+   9  │ Guitar      │ XLR Out / 48v   │             - Instrument Amps
+   10 │ Vocal       │ Beta 57a        │             - Drum Kit
+   11 │ Lead Vocal  │ Beta 57a        │
+      └─────────────┘─────────────────┘
+        </pre>
       </div>
     </div>
 
@@ -123,6 +227,13 @@
       gtag("js", new Date());
 
       gtag("config", "G-NRJ6ZB3HBK");
+    </script>
+    <script>
+      const plotType = new URLSearchParams(window.location.search).get("type");
+      const isVenuePlot = plotType === "venue";
+
+      document.getElementById("band-plot").style.display = isVenuePlot ? "none" : "block";
+      document.getElementById("venue-plot").style.display = isVenuePlot ? "block" : "none";
     </script>
   </body>
 </html>
