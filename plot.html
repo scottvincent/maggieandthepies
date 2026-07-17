@@ -13,7 +13,7 @@
     <meta property="og:title" content="Stage Plot &amp; Input List — Maggie And The Pies" />
     <meta property="og:url" content="https://maggieandthepies.com/plot.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://maggieandthepies.com/img/stageplot-og.png" />
+    <meta id="plot-og-image" property="og:image" content="https://maggieandthepies.com/img/plot-band-og.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="Maggie And The Pies" />
@@ -21,9 +21,9 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Stage Plot &amp; Input List — Maggie And The Pies" />
     <meta name="twitter:description" content="Stage plot and input list for Maggie and The Pies — London Ontario good time fun band." />
-    <meta name="twitter:image" content="https://maggieandthepies.com/img/stageplot-og.png" />
+    <meta id="plot-twitter-image" name="twitter:image" content="https://maggieandthepies.com/img/plot-band-og.png" />
     <meta name="theme-color" content="#F7BBE1" />
-    <script type="application/ld+json">
+    <script id="plot-schema" type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "MusicGroup",
@@ -31,13 +31,24 @@
         "url": "https://maggieandthepies.com",
         "genre": "Cover Band",
         "description": "Stage plot and input list for Maggie and The Pies — London Ontario good time fun band.",
-        "image": "https://maggieandthepies.com/img/stageplot-og.png",
+        "image": "https://maggieandthepies.com/img/plot-band-og.png",
         "sameAs": [
           "https://www.facebook.com/MaggieAndThePies",
           "https://www.instagram.com/maggieandthepies",
           "https://www.youtube.com/@maggieandthepies4615"
         ]
       }
+    </script>
+    <script>
+      const previewIsVenue = new URLSearchParams(window.location.search).get("type") === "venue";
+      const previewImage = `https://maggieandthepies.com/img/plot-${previewIsVenue ? "venue" : "band"}-og.png`;
+
+      document.getElementById("plot-og-image").content = previewImage;
+      document.getElementById("plot-twitter-image").content = previewImage;
+      document.getElementById("plot-schema").textContent = JSON.stringify({
+        ...JSON.parse(document.getElementById("plot-schema").textContent),
+        image: previewImage,
+      });
     </script>
 
     <link rel="stylesheet" href="styles/main.css" />
