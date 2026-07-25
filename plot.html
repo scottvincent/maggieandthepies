@@ -90,6 +90,24 @@
           white-space: pre;
         }
       }
+
+      .ascii-plot {
+        width: 100%;
+        max-width: 100%;
+        margin: 2rem auto;
+        overflow: hidden;
+        white-space: pre;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 30px;
+        line-height: 1.5;
+        text-fit: shrink consistent;
+      }
+
+      @supports not (text-fit: shrink) {
+        .ascii-plot {
+          font-size: min(30px, 1vw);
+        }
+      }
     </style>
   </head>
   <body style="--body-bg: #fff; --text-color: #000; padding: 30px">
@@ -99,11 +117,11 @@
     <div class="" id="main">
       <div class="" role="main">
         <img
-          src="img/Maggieandthepies-text.svg"
+          src="logos/SVG/MATP-White-Text-Outline.svg"
           alt="Maggie and The Pies"
           style="display: block; width: min(100%, 280px); height: auto; margin: 2rem 0 0"
         />
-        <pre id="band-plot" style="margin: 2rem auto; font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 14px; line-height: 1.5">
+        <pre id="band-plot" class="ascii-plot">
    -----------------------
    STAGE PLOT &amp; INPUT LIST
    -----------------------
@@ -162,10 +180,7 @@
    Any questions or concerns, please contact Scott at maggieandthepies@gmail.com
   </pre
         >
-        <pre
-          id="venue-plot"
-          style="display: none; margin: 2rem auto; font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 14px; line-height: 1.5"
-        >
+        <pre id="venue-plot" class="ascii-plot" style="display: none">
             -----------------------
             STAGE PLOT & INPUT LIST
             -----------------------
