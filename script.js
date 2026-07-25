@@ -1,17 +1,17 @@
 // Shared date formatting options
-const DATE_OPTIONS = { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' };
-const TIME_OPTIONS = { hour12: true, hour: 'numeric', minute: '2-digit' };
-const DAY_OPTIONS = { weekday: 'long' };
-const MONTH_DAY_OPTIONS = { month: 'long', day: 'numeric' };
+const DATE_OPTIONS = { weekday: "short", year: "numeric", month: "long", day: "numeric" };
+const TIME_OPTIONS = { hour12: true, hour: "numeric", minute: "2-digit" };
+const DAY_OPTIONS = { weekday: "long" };
+const MONTH_DAY_OPTIONS = { month: "long", day: "numeric" };
 
-const dateFormatter = new Intl.DateTimeFormat('en-US', DATE_OPTIONS);
-const timeFormatter = new Intl.DateTimeFormat('en-US', TIME_OPTIONS);
-const dayFormatter = new Intl.DateTimeFormat('en-US', DAY_OPTIONS);
-const monthDayFormatter = new Intl.DateTimeFormat('en-US', MONTH_DAY_OPTIONS);
+const dateFormatter = new Intl.DateTimeFormat("en-US", DATE_OPTIONS);
+const timeFormatter = new Intl.DateTimeFormat("en-US", TIME_OPTIONS);
+const dayFormatter = new Intl.DateTimeFormat("en-US", DAY_OPTIONS);
+const monthDayFormatter = new Intl.DateTimeFormat("en-US", MONTH_DAY_OPTIONS);
 
 // Utility function for fetching JSON
 const fetchJSON = (url) =>
-  fetch(url).then(response => {
+  fetch(url).then((response) => {
     if (!response.ok) {
       throw new Error(`Failed to fetch ${url}: ${response.status}`);
     }
@@ -28,22 +28,22 @@ const createElement = (tag, innerHTML, parent) => {
 
 // Setlist sort comparator
 const sortSetlist = (a, b) => {
-  const stripThe = (name) => name.replace(/^The\s+/i, '').trim();
-  const artistA = stripThe(a?.artist ? String(a.artist) : '');
-  const artistB = stripThe(b?.artist ? String(b.artist) : '');
-  const artistCompare = artistA.localeCompare(artistB, undefined, { sensitivity: 'base' });
+  const stripThe = (name) => name.replace(/^The\s+/i, "").trim();
+  const artistA = stripThe(a?.artist ? String(a.artist) : "");
+  const artistB = stripThe(b?.artist ? String(b.artist) : "");
+  const artistCompare = artistA.localeCompare(artistB, undefined, { sensitivity: "base" });
   if (artistCompare !== 0) return artistCompare;
 
-  const yearA = parseInt(a?.year || '', 10);
-  const yearB = parseInt(b?.year || '', 10);
+  const yearA = parseInt(a?.year || "", 10);
+  const yearB = parseInt(b?.year || "", 10);
   const yearAValid = !isNaN(yearA);
   const yearBValid = !isNaN(yearB);
   if (yearAValid && yearBValid && yearA !== yearB) return yearA - yearB;
   if (yearAValid !== yearBValid) return yearAValid ? -1 : 1;
 
-  const songA = (a?.song ? String(a.song) : '').trim();
-  const songB = (b?.song ? String(b.song) : '').trim();
-  return songA.localeCompare(songB, undefined, { sensitivity: 'base' });
+  const songA = (a?.song ? String(a.song) : "").trim();
+  const songB = (b?.song ? String(b.song) : "").trim();
+  return songA.localeCompare(songB, undefined, { sensitivity: "base" });
 };
 
 // People Data
@@ -70,8 +70,8 @@ const positionBannerSvg = `
     </g>
   </svg>`;
 
-fetchJSON('people.json')
-  .then(data => {
+fetchJSON("people.json")
+  .then((data) => {
     // Seeded random function based on person.id for consistent tilts
     const seededRandom = (seed) => {
       const x = Math.sin(seed) * 10000;
@@ -80,33 +80,33 @@ fetchJSON('people.json')
 
     const fragment = document.createDocumentFragment();
     data.forEach((person, index) => {
-      const card = document.createElement('div');
-      card.className = 'baseball-card';
+      const card = document.createElement("div");
+      card.className = "baseball-card";
       // Generate consistent tilt based on person's ID
       const randomTilt = (seededRandom(parseInt(person.id || index)) - 0.5) * 10;
-      card.style.setProperty('--card-tilt', `${randomTilt}deg`);
+      card.style.setProperty("--card-tilt", `${randomTilt}deg`);
 
-      const flipper = document.createElement('div');
-      flipper.setAttribute('aria-label', `${person.name} baseball card`);
-      flipper.setAttribute('role', 'button');
-      flipper.setAttribute('tabindex', '0');
-      flipper.className = 'baseball-flipper';
+      const flipper = document.createElement("div");
+      flipper.setAttribute("aria-label", `${person.name} baseball card`);
+      flipper.setAttribute("role", "button");
+      flipper.setAttribute("tabindex", "0");
+      flipper.className = "baseball-flipper";
       flipper.innerHTML = `
         <section class="front">
           <address class="player-name">${person.name}</address>
           <div class="player-photo" style="background-image:url('${person.img}')"></div>
           <p class="position">${person.position}</p>
-          <img src="/img/Maggieandthepies-text.svg" alt="" class="team-logo" aria-hidden="true">
+          <img src="/logos/SVG/MATP-White-Text-Outline.svg" alt="" class="team-logo" aria-hidden="true">
           ${teamBannerSvg}
           ${positionBannerSvg}
         </section>
         <section class="back">
         </section>`;
 
-      const toggleFlip = () => flipper.classList.toggle('flipped');
-      flipper.addEventListener('click', toggleFlip);
-      flipper.addEventListener('keydown', (e) => {
-        if (e.code === 'Space' || e.code === 'Enter') {
+      const toggleFlip = () => flipper.classList.toggle("flipped");
+      flipper.addEventListener("click", toggleFlip);
+      flipper.addEventListener("keydown", (e) => {
+        if (e.code === "Space" || e.code === "Enter") {
           e.preventDefault();
           toggleFlip();
         }
@@ -115,49 +115,47 @@ fetchJSON('people.json')
       card.appendChild(flipper);
       fragment.appendChild(card);
     });
-    document.getElementById('personnel').appendChild(fragment);
+    document.getElementById("personnel").appendChild(fragment);
   })
-  .catch(err => console.error('Error loading people:', err));
+  .catch((err) => console.error("Error loading people:", err));
 
 // Shows Data
-fetchJSON('shows.json')
-  .then(data => {
-    const showContainer = document.getElementById('shows');
-    const pastContainer = document.getElementById('past');
+fetchJSON("shows.json")
+  .then((data) => {
+    const showContainer = document.getElementById("shows");
+    const pastContainer = document.getElementById("past");
     const now = new Date();
 
     // Parse each date once and reuse it for filtering, sorting, and formatting.
-    const showsWithDate = data.map(show => ({
+    const showsWithDate = data.map((show) => ({
       ...show,
-      _parsedDate: new Date(show.startDate)
+      _parsedDate: new Date(show.startDate),
     }));
 
-    const upcomingShows = showsWithDate.filter(show => show._parsedDate > now);
-    const pastShows = showsWithDate
-      .filter(show => show._parsedDate < now)
-      .sort((a, b) => b._parsedDate - a._parsedDate); // Newest first
+    const upcomingShows = showsWithDate.filter((show) => show._parsedDate > now);
+    const pastShows = showsWithDate.filter((show) => show._parsedDate < now).sort((a, b) => b._parsedDate - a._parsedDate); // Newest first
 
     // Upcoming shows
     if (!upcomingShows.length) {
-      createElement('figure', '<figcaption class="empty">No Upcoming Shows</figcaption>', showContainer);
+      createElement("figure", '<figcaption class="empty">No Upcoming Shows</figcaption>', showContainer);
     } else {
       const fragment = document.createDocumentFragment();
-      upcomingShows.forEach(show => {
+      upcomingShows.forEach((show) => {
         const date = show._parsedDate;
-        const venue = show.location?.name 
-          ? `<a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(show.location.name)}">${show.location.name}</a>` 
-          : '';
-        const price = show.offers?.price ? ` &bull; $${show.offers.price}` : '';
-        const link = show.url ? ` <a href="${show.url}" target="_blank" rel="noopener noreferrer">More Info...</a>` : '';
+        const venue = show.location?.name
+          ? `<a target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(show.location.name)}">${show.location.name}</a>`
+          : "";
+        const price = show.offers?.price ? ` &bull; $${show.offers.price}` : "";
+        const link = show.url ? ` <a href="${show.url}" target="_blank" rel="noopener noreferrer">More Info...</a>` : "";
 
-        const figure = document.createElement('figure');
+        const figure = document.createElement("figure");
         figure.innerHTML = `<h3>${dateFormatter.format(date)}</h3>
           <figcaption>
             ${venue}
-            <small>${show.location?.address || ''}</small>
+            <small>${show.location?.address || ""}</small>
             <small>${timeFormatter.format(date)}${price}</small>
           </figcaption><hr>
-          <p>${show.description || ''}${link}</p>`;
+          <p>${show.description || ""}${link}</p>`;
         fragment.appendChild(figure);
       });
       showContainer.appendChild(fragment);
@@ -165,52 +163,56 @@ fetchJSON('shows.json')
 
     // Past shows
     if (!pastShows.length) {
-      createElement('tr', '<td class="empty">No Past Shows</td>', pastContainer);
+      createElement("tr", '<td class="empty">No Past Shows</td>', pastContainer);
     } else {
-      createElement('thead', '<tr class="sr-only"><th scope="col">Date</th><th scope="col">Venue</th></tr>', pastContainer);
+      createElement("thead", '<tr class="sr-only"><th scope="col">Date</th><th scope="col">Venue</th></tr>', pastContainer);
       const fragment = document.createDocumentFragment();
-      
+
       // Group shows by year
       let currentYear = null;
-      
-      pastShows.forEach(show => {
+
+      pastShows.forEach((show) => {
         const date = show._parsedDate;
         const showYear = date.getFullYear();
-        
+
         // Add year header row if year changed
         if (showYear !== currentYear) {
           currentYear = showYear;
-          const yearRow = document.createElement('tr');
+          const yearRow = document.createElement("tr");
           yearRow.innerHTML = `<th colspan="2">${showYear}</th>`;
           fragment.appendChild(yearRow);
         }
-        
+
         // Add show row without year
         const dayOfWeek = dayFormatter.format(date);
         const monthDay = monthDayFormatter.format(date);
-        const row = document.createElement('tr');
+        const row = document.createElement("tr");
         row.innerHTML = `<td><small>${dayOfWeek}</small><br>${monthDay}</td>
-          <td>${show.location?.name || ''}<br><small>${show.location?.address || ''}</small></td>`;
+          <td>${show.location?.name || ""}<br><small>${show.location?.address || ""}</small></td>`;
         fragment.appendChild(row);
       });
       pastContainer.appendChild(fragment);
     }
   })
-  .catch(err => console.error('Error loading shows:', err));
+  .catch((err) => console.error("Error loading shows:", err));
 
 // Setlist Data
-fetchJSON('setlist.json')
-  .then(data => {
-    const setlistContainer = document.getElementById('setlist');
+fetchJSON("setlist.json")
+  .then((data) => {
+    const setlistContainer = document.getElementById("setlist");
 
     if (!data.length) {
-      createElement('tr', '<td class="empty">Looks like we don\'t know any songs...</td>', setlistContainer);
+      createElement("tr", '<td class="empty">Looks like we don\'t know any songs...</td>', setlistContainer);
     } else {
-      createElement('thead', '<tr class="sr-only"><th scope="col">Index</th><th scope="col">Artist</th><th scope="col">Song Title</th><th scope="col">Release Year</th></tr>', setlistContainer);
-      
+      createElement(
+        "thead",
+        '<tr class="sr-only"><th scope="col">Index</th><th scope="col">Artist</th><th scope="col">Song Title</th><th scope="col">Release Year</th></tr>',
+        setlistContainer,
+      );
+
       const fragment = document.createDocumentFragment();
       data.sort(sortSetlist).forEach((song, index) => {
-        const row = document.createElement('tr');
+        const row = document.createElement("tr");
         row.innerHTML = `<td>${index + 1}</td>
           <td>${song.artist}</td>
           <td>${song.song}</td>
@@ -220,4 +222,4 @@ fetchJSON('setlist.json')
       setlistContainer.appendChild(fragment);
     }
   })
-  .catch(err => console.error('Error loading setlist:', err));
+  .catch((err) => console.error("Error loading setlist:", err));
